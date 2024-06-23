@@ -69,7 +69,7 @@ ORDER BY quantity DESC
 LIMIT 5;
 
 
--- 6. Join the necessary tables to find the total quantity of each pizza category ordered. 
+-- 6. Find the total quantity of each pizza category ordered. 
 SELECT 
 	pizza_types.category, sum(order_details.quantity) AS quantity
 FROM
